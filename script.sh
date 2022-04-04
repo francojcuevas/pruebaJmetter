@@ -9,7 +9,7 @@ docker run --rm -v $WORKSPACE:/workspace swethapn14/repo_perf:JmeterLatest -Jjme
 #exit 1
 #fi
 
-if cat grep "false" $WORKSPACE/$reportFile > $WORKSPACE/resultadoemail.txt || cat $JOB_NAME > $WORKSPACE/resultadoemail.txt || cat $DATE > $WORKSPACE/resultadoemail.txt
+if cat grep "false" $WORKSPACE/$reportFile > $WORKSPACE/resultadoemail.txt && cat $JOB_NAME > $WORKSPACE/resultadoemail.txt && cat $DATE > $WORKSPACE/resultadoemail.txt
 then
 echo El test fallo
 exit 1
