@@ -13,7 +13,7 @@ if grep "false" $reportFile > $WORKSPACE/resultadoemail.txt || $JOB_NAME > $WORK
 then
 echo El test fallo
 exit 1
-else grep "true" $WROKSPACE/$reportFile > resultadoemail.txt
+else grep "true" $reportFile > resultadoemail.txt
 echo El test finalizo correctamente
 exit 0
 fi
