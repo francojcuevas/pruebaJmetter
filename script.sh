@@ -11,7 +11,7 @@ then
 echo El test fallo
 exit 1
 else grep "true" $reportFile > resultadoemail.txt
-cat $JOB_NAME > resultadoemail.txt
+echo $JOB_NAME > resultadoemail.txt
 #&& grep $JOB_NAME > resultadoemail.txt && grep $DATE > resultadoemail.tx
 echo El test finalizo correctamente
 exit 0
