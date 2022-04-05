@@ -2,7 +2,7 @@
 csvFile=$1
 projectName=$2
 reportFile=$3
-#date
+date
 #date + "%FORMAT"
 var=$(date)
 echo //////////////////////////////
