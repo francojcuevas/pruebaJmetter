@@ -9,7 +9,7 @@ if grep "false" $reportFile > resultadoemail.txt && echo "Nombre de proyecto:" $
 then
 echo El test fallo
 exit 1
-else grep "true" $reportFile > resultadoemail.txt && echo "Nombre de proyecto:" $JOB_NAME >> resultadoemail.txt && echo "Fecha y hora de ejecucion:" $var_date >> resultadoemail.txt
+else grep "true" $reportFile > resultadoemail.txt && echo "Nombre de proyecto:" $JOB_NAME >> resultadoemail.txt && echo "Fecha y hora de ejecucion:" $var_date >> resultadoemail.txt && echo "El test de Performance ha finalizado correctamente"
 echo El test finalizo correctamente
 exit 0
 fi
