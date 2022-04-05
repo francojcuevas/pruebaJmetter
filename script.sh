@@ -11,7 +11,7 @@ if grep "false" $reportFile > resultadoemail.txt && $JOB_NAME > resultadoemail.t
 then
 echo El test fallo
 exit 1
-else grep "true" $reportFile > resultadoemail.txt && echo "Nombre de proyecto: $JOB_NAME" >> resultadoemail.txt && echo "Fecha y hora de ejecucion: $var_date" >> resultado.txt
+else grep "true" $reportFile > resultadoemail.txt && echo "Nombre de proyecto:" $JOB_NAME >> resultadoemail.txt && echo "Fecha y hora de ejecucion:" $var_date >> resultado.txt
 #&& echo "\n$JOB_NAME" > resultadoemail.txt
 #&& grep $JOB_NAME > resultadoemail.txt && grep $DATE > resultadoemail.tx
 echo El test finalizo correctamente
